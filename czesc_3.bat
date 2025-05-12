@@ -1,7 +1,16 @@
 @echo off
+:: --- AUTOMATYCZNE PODNIESIENIE UPRAWNIEŃ ---
+:: Sprawdzenie czy mamy prawa administratora
+net session >nul 2>&1
+if %errorLevel% neq 0 (
+    echo Uruchamianie jako administrator...
+    powershell -Command "Start-Process -FilePath '%~f0' -Verb RunAs"
+    exit /b
+)
+
 setlocal enableextensions enabledelayedexpansion
 
-REM Ustawienia katalog�w tymczasowych
+REM Ustawienia katalogów tymczasowych
 set "TEMP_DIR=%TEMP%"
 set "ZIP_PATH=%TEMP_DIR%\win8icons.zip"
 set "ICON_DIR=%TEMP_DIR%\Win8Icons"
