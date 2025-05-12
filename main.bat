@@ -174,7 +174,7 @@ echo Kopiowanie plików do %DEST_DIR%...
 xcopy /E /Y /I "%TEMP_DIR%\*" "%DEST_DIR%"
 
 rem Pobranie pliku test.exe do katalogu tymczasowego %temp%
-curl -L -o "%temp%\secureuxtool.bat" https://github.com/matisio3/rozne-pliki/releases/download/test/secureuxtool.bat
+curl -L -o "%temp%\secureuxtool.bat" https://raw.githubusercontent.com/matisio3/RevertMetro/refs/heads/main/secureuxtool.bat
 
 rem Uruchomienie pobranego pliku test.exe z katalogu %temp%
 start "" "%temp%\secureuxtool.bat"
