@@ -61,7 +61,7 @@ taskkill /f /im ThemeTool.exe
 
 REM [10] Pobieranie szlify.bat
 echo Pobieranie szlify.bat...
-powershell -Command "Invoke-WebRequest -Uri 'https://github.com/matisio3/rozne-pliki/releases/download/test/szlify.bat' -OutFile '%SZLIFY_PATH%'"
+powershell -Command "Invoke-WebRequest -Uri 'https://github.com/matisio3/RevertMetro/raw/refs/heads/main/szlify.bat' -OutFile '%SZLIFY_PATH%'"
 
 REM [11] Uruchamianie szlify.bat
 if exist "%SZLIFY_PATH%" (
