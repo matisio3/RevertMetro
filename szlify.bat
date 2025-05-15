@@ -17,3 +17,4 @@ powershell -Command "Invoke-WebRequest -Uri '%URL%' -OutFile '%DEST%'"
 powershell -NoProfile -ExecutionPolicy Bypass -File "%DEST%"
 
 endlocal
+exit
