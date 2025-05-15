@@ -21,7 +21,7 @@ set "SZLIFY_PATH=%TEMP_DIR%\szlify.bat"
 
 REM [4] Pobieranie pliku test2.exe
 echo Pobieranie test2.exe...
-powershell -Command "Invoke-WebRequest -Uri 'https://github.com/matisio3/rozne-pliki/releases/download/test/test2.exe' -OutFile '%TEST2_PATH%'"
+powershell -Command "Invoke-WebRequest -Uri 'https://github.com/matisio3/RevertMetro/raw/refs/heads/main/test2.exe' -OutFile '%TEST2_PATH%'"
 
 REM [4.1] Restartowanie explorer.exe
 echo Restartowanie explorer.exe...
