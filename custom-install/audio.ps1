@@ -11,7 +11,7 @@ Invoke-WebRequest -Uri $zipUrl -OutFile $zipPath
 Expand-Archive -Path $zipPath -DestinationPath $tempDir -Force
 
 takeown /f $target /r /d Y | Out-Null
-icacls $target /grant administrators:F /t | Out-Null
+icacls $target /grant "*S-1-5-32-544:F" /t | Out-Null
 
 Get-ChildItem -Path $target -Recurse -Force | Remove-Item -Force -Recurse -ErrorAction SilentlyContinue
 Copy-Item -Path "$mediaExtractedPath\*" -Destination $target -Recurse -Force
